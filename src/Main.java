@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Wybierz funkcje. Wprowadz 1, 2 lub 3: ");
+        System.out.println("Wybierz funkcje. Wprowadz 1, 2 ,3 ,4 lub 5: ");
         Scanner wybor = new Scanner(System.in);
         int funkcja = wybor.nextInt();
         //liczba wezlow
@@ -37,6 +37,14 @@ public class Main {
         if(funkcja==3)
         {
             MetodaNajmniejszychKwadratow.funkcja3(liczbaWezlow,wartosciWezlow,wartosciFunkcji);
+        }
+        if(funkcja==4)
+        {
+            MetodaNajmniejszychKwadratow.funkcja4(liczbaWezlow,wartosciWezlow,wartosciFunkcji);
+        }
+        if(funkcja==5)
+        {
+            MetodaNajmniejszychKwadratow.funkcja5(liczbaWezlow,wartosciWezlow,wartosciFunkcji);
         }
 
     }
