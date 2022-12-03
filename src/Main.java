@@ -10,7 +10,7 @@ public class Main {
         Scanner wezly = new Scanner(System.in);
         int liczbaWezlow = wezly.nextInt();
         //wartosci wezlow
-        double wartosciWezlow [] = new double [liczbaWezlow];
+        double[] wartosciWezlow = new double [liczbaWezlow];
         for(int i=0;i<liczbaWezlow;i++)
         {
             System.out.println("Wprowadz wartosc x["+i+"]: ");
@@ -19,7 +19,7 @@ public class Main {
         }
 
         //wartosci funkcji w wezlach
-        double wartosciFunkcji[]= new double [liczbaWezlow];
+        double[] wartosciFunkcji = new double [liczbaWezlow];
         for(int i=0;i<liczbaWezlow;i++)
         {
             System.out.println("Wprowadz wartosci funckji w wezle x["+i+"]: ");
