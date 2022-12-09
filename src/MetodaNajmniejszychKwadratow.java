@@ -4,6 +4,7 @@ import static java.lang.Math.sqrt;
 public class MetodaNajmniejszychKwadratow {
     public static void funkcja1(int liczbaWezlow, double [] wartosciWezlow, double [] wartosciFunkcji)
     {
+
         int n = liczbaWezlow-1;
         //obliczanie sum
         double sumaxi=0;
@@ -143,7 +144,8 @@ public class MetodaNajmniejszychKwadratow {
 
         double bb= pow(Math.E,b);
         double aa = pow(Math.E,a);
-        System.out.println("Funkcja aproksymujaca ma postac: "+ bb +" *"+ aa +"^x");
+        System.out.println("Funkcja aproksymujaca ma postac: e^"+ b +" * e^("+ a +"*x)");
+        System.out.println("Jej dokladna postac to: "+ bb +" * "+ aa +"^x");
 
     }
     public static void funkcja4(int liczbaWezlow, double [] wartosciWezlow, double [] wartosciFunkcji)

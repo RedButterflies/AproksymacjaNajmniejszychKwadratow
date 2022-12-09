@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.Math.pow;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Wybierz funkcje. Wprowadz 1, 2 ,3 ,4 lub 5: ");
@@ -11,20 +13,38 @@ public class Main {
         int liczbaWezlow = wezly.nextInt();
         //wartosci wezlow
         double[] wartosciWezlow = new double [liczbaWezlow];
-        for(int i=0;i<liczbaWezlow;i++)
+        if(funkcja==1||funkcja==4||funkcja==3||funkcja==5) {
+            for (int i = 0; i < liczbaWezlow; i++) {
+                System.out.println("Wprowadz wartosc x[" + i + "]: ");
+                Scanner wartosc = new Scanner(System.in);
+                wartosciWezlow[i] = wartosc.nextDouble();
+            }
+        }
+        if(funkcja==2)
         {
-            System.out.println("Wprowadz wartosc x["+i+"]: ");
-            Scanner wartosc = new Scanner(System.in);
-            wartosciWezlow[i]=wartosc.nextDouble();
+            for (int i = 0; i < liczbaWezlow; i++) {
+                System.out.println("Wprowadz wartosc mianownika w x[" + i + "]: ");
+                Scanner wartosc = new Scanner(System.in);
+                wartosciWezlow[i] = 1/wartosc.nextDouble();
+            }
         }
 
         //wartosci funkcji w wezlach
         double[] wartosciFunkcji = new double [liczbaWezlow];
-        for(int i=0;i<liczbaWezlow;i++)
-        {
-            System.out.println("Wprowadz wartosci funckji w wezle x["+i+"]: ");
-            Scanner funkcjaX = new Scanner(System.in);
-            wartosciFunkcji[i]=funkcjaX.nextDouble();
+        if(funkcja==1||funkcja==2||funkcja==4||funkcja==5) {
+            for (int i = 0; i < liczbaWezlow; i++) {
+                System.out.println("Wprowadz wartosci funckji w wezle x[" + i + "]: ");
+                Scanner funkcjaX = new Scanner(System.in);
+                wartosciFunkcji[i] = funkcjaX.nextDouble();
+            }
+        }
+        if(funkcja==3) {
+            for (int i = 0; i < liczbaWezlow; i++) {
+                System.out.println("Wprowadz wartosci wykladnika e w funkcji w wezle x[" + i + "]:");
+                System.out.println(" jesli wartosc funkcji jest rowna 1, wprowadz 0");
+                Scanner funkcjaX = new Scanner(System.in);
+                wartosciFunkcji[i] = pow(Math.E,funkcjaX.nextDouble());
+            }
         }
         if(funkcja==1)
         {
