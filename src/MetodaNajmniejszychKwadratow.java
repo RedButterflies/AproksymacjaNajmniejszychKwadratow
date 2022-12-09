@@ -241,7 +241,7 @@ public class MetodaNajmniejszychKwadratow {
         double b= Wa0/W;
         double a = Wa1/W;
 
-        System.out.println("Funkcja aproksymujaca ma postac: "+a+"*pierwiastek x +"+" ("+b+")");
+        System.out.println("Funkcja aproksymujaca ma postac: "+a+"*pierwiastek kwadratowy z x +"+" ("+b+")");
 
 
 

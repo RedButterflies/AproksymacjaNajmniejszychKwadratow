@@ -5,6 +5,11 @@ import static java.lang.Math.pow;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Wybierz funkcje. Wprowadz 1, 2 ,3 ,4 lub 5: ");
+        System.out.println("1: ax +b ");
+        System.out.println("2: a/x +b ");
+        System.out.println("3: b * a^x ");
+        System.out.println("4: a*x^2 +b ");
+        System.out.println("5: a* pierwiastek kwadratowy z x +b ");
         Scanner wybor = new Scanner(System.in);
         int funkcja = wybor.nextInt();
         //liczba wezlow
